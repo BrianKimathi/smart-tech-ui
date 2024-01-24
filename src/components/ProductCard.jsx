@@ -1,5 +1,6 @@
 import React from "react";
 import TV from "../images/tv.png";
+import { Link } from "react-router-dom";
 
 function ProductCard(props) {
   return (
@@ -30,8 +31,10 @@ function ProductCard(props) {
         <a
           href="#"
           className="flex items-center justify-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
+        <Link to='/product_detail'
+          class="flex items-center justify-center rounded-md bg-slate-900 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300">
           View Product
-        </a>
+        </Link>
       </div>
     </div>
   );

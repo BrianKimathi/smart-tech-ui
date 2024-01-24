@@ -3,6 +3,7 @@ import ProductDetail from "../components/ProductDetail";
 import Tv from "../images/tvs.png";
 import Appliances from "../images/appliances.png";
 import HeadPhones from "../images/headphones.png";
+import Products from "../components/Products";
 
 const productImages = [
   Tv,
@@ -26,6 +27,11 @@ function ProductInfoPage() {
         description={productDetails.description}
         features={productDetails.features}
       />
+
+      <hr className="mt-4"/>
+  
+
+      <Products title= "Related Products"/>
     </div>
   );
 }

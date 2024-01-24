@@ -20,7 +20,7 @@ function App() {
         <Route path="/register" Component={RegisterPage}/>
         <Route path="/contact" Component={ContactPage}/>
         <Route path="/about" Component={AboutPage}/>
-        
+        <Route path="/product_detail" Component={ProductInfoPage}/>        
       </Routes>
     </div>
   );

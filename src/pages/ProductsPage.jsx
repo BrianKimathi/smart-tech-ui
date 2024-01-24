@@ -22,7 +22,7 @@ function ProductsPage() {
     <div>
       {/* <SearchBar /> */}
       <ParentComponent />
-      <Products />
+      <Products title = "Our Products" />
       <Pagination
         currentPage={currentPage}
         totalPages={pages}

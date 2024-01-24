@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import ViewMore from "../components/ViewMore";
 import { useSelector, useDispatch } from "react-redux";
 import { getProducts } from "../store/productSlice";
+import ViewMore from '../components/ViewMore'
 
 function HomePage() {
   // Assuming you have a useSelector hook to get products from the Redux store
@@ -26,6 +27,8 @@ function HomePage() {
 
       <ViewMore />
       <hr className="m-10" />
+      <Products title = "In Stock" />
+      <ViewMore/>
       <Features />
       <ServiceCards />
       <Footer />

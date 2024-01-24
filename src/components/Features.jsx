@@ -7,7 +7,7 @@ import HeadPhones from "../images/headphones.png";
 function Features() {
   return (
     <div className="container mx-auto p-8">
-      <h2 className="text-3xl font-bold mb-6 text-pink-500">Features</h2>
+      <h2 className="text-3xl font-bold mb-6 text-pink-500">Featured Products</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
         <div className="bg-white p-6 rounded-lg shadow-md">
