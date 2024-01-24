@@ -6,7 +6,7 @@ function ProductCard(props) {
     <div className="group my-4 flex w-full max-w-xs sm:w-4/5 flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md">
       <Link
         className="relative mx-3 mt-3 flex items-center justify-center h-60 overflow-hidden rounded-xl"
-        href="#">
+        to="#">
         <img
           className="object-contain"
           style={{ height: "180px", width: "130px" }}
