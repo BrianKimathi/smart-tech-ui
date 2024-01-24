@@ -1,27 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { setCurrentPage, getProducts } from "../store/productSlice";
 import ParentComponent from "../components/Parent";
 import Products from "../components/Products";
 import Pagination from "../components/Pagination";
 import Footer from "../components/Footer";
-import SearchBar from "../components/SearchBar";
 
 function ProductsPage() {
-  const currentPage = 1;
-  const totalPages = 5;
+  const dispatch = useDispatch();
+  const { pages, currentPage } = useSelector((state) => state.products);
 
   const handlePageChange = (pageNumber) => {
-    // Add logic to handle page change
-    console.log(`Switching to page ${pageNumber}`);
+    dispatch(setCurrentPage(pageNumber));
   };
+
+  useEffect(() => {
+    dispatch(getProducts(currentPage));
+  }, [dispatch, currentPage]);
 
   return (
     <div>
-      <SearchBar />
+      {/* <SearchBar /> */}
       <ParentComponent />
       <Products />
       <Pagination
         currentPage={currentPage}
-        totalPages={totalPages}
+        totalPages={pages}
         onPageChange={handlePageChange}
       />
       <Footer />
