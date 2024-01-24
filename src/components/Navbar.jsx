@@ -35,13 +35,6 @@ function Navbar() {
         Smart-<span className="text-blue-700 italic">Tech</span> Kenya
       </h2>
 
-      <div className="flex p-2 md:p-3">
-        <Link
-          to="/login"
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 md:py-1 md:px-3 lg:px-4 rounded">
-          Login
-        </Link>
-      </div>
 
       <div className="flex p-2 md:hidden">
         {open ? (
